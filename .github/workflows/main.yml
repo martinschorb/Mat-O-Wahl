@@ -17,7 +17,7 @@ jobs:
           <!doctype html>
           <html>
             <head>
-              <title>GitHub Pages deployed!</title>
+              <title>GitHub Pages deployed123!</title>
             </head>
             <body>
               <p>GitHub Pages with <strong>${{ github.sha }}</strong> commit ID has been deployed through <a href="https://github.com/marketplace/actions/github-pages">GitHub Pages action</a> successfully.</p>
@@ -29,7 +29,6 @@ jobs:
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          target_branch: gh-pages
           build_dir: public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
